@@ -1,0 +1,50 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.preference.PreferenceCategory
+        android:key="basic_info"
+        android:title="Basic info">
+
+        <androidx.preference.Preference
+            android:key="Device_name"
+            android:title="Device name"/>
+        <androidx.preference.Preference
+            android:key="Android_version"
+            android:title="Android version"/>
+        <androidx.preference.Preference
+            android:key="Os_version"
+            android:title="EvoX version"
+            android:summary="9.0-UNOFFICIAL-BUILD_A.P.W"/>
+        <androidx.preference.Preference
+            android:key="Security_patch"
+            android:title="Android security update"/>
+        
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory
+        android:key="versions"
+        android:title="Versions">
+        <androidx.preference.Preference
+            android:key="Baseband_version"
+            android:title="Baseband version"/>
+        <androidx.preference.Preference
+            android:key="Kernel_version"
+            android:title="Kernel version"/>
+        
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory
+        android:key="device_info"
+        android:title="Device info">
+        <androidx.preference.Preference
+            android:key="screen_size"
+            android:title="Screen size"/>
+        <androidx.preference.Preference
+            android:key="Processor"
+            android:title="Processor"/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory
+        android:key="extra"
+        android:title="Miscellaneous">
+        <androidx.preference.Preference
+            android:key="more_settings"
+            android:title="More info"/>
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

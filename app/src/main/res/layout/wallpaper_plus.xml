@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="?attr/colorSurfaceContainer"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorSurfaceContainer"
+        app:titleTextAppearance="@style/TextAppearance.Widget.Event.Toolbar.Title"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_height="179dp"
+            android:layout_width="match_parent"
+            app:expandedTitleTextAppearance="@style/Theme.Apw.ToolbarExpanded"
+            app:maxLines="2"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:elevation="0dp"
+            app:expandedTitleGravity="left|bottom"
+            app:titleCollapseMode="fade"
+            app:statusBarScrim="?attr/colorSurfaceContainer"
+            app:contentScrim="?attr/colorSurfaceContainer"
+            app:collapsedTitleTextAppearance="@style/Theme.Apw.ToolbarCollapsed"
+            style="?attr/collapsingToolbarLayoutLargeStyle"
+            app:expandedTitleMarginBottom="31dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:title="Wallpaper Plus"
+                android:elevation="0dp"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/back"
+                android:id="@+id/toolbar" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/settings_container" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:id="@+id/layout"
+                android:orientation="horizontal">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_alignParentRight="true"
+                    style="?attr/materialCardViewFilledStyle"
+                    android:id="@+id/home1">
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/low"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_alignParentRight="true"
+                    style="?attr/materialCardViewFilledStyle"
+                    android:id="@+id/home2">
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/normal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_alignParentRight="true"
+                    style="?attr/materialCardViewFilledStyle"
+                    android:id="@+id/home3">
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/charging"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
