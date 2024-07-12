@@ -1,3 +1,4 @@
+![1000177871](https://github.com/user-attachments/assets/6b14a7cf-6ed7-4d9d-92c8-ee974dfd78c0)
 # Android-15-Settings-Clone
 
 Unleash the powers and customisations of your ordinary Settings app.....
